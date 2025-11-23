@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TestNG Listner Suite</th></tr>
+<tr><td><a href="#t0">Listner Test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">6</td><td class="num attn">2</td><td class="num">91,865</td><td>Sanity, DataDriven</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestNG Listner Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Listner Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.LoginTest</td><td><a href="#m0">testLoginForRetry</a></td><td rowspan="1">1763871041712</td><td rowspan="1">483</td></tr><tr class="failedodd"><td rowspan="1">tests.RegistrationTest</td><td><a href="#m1">testRegisterForRetry</a></td><td rowspan="1">1763871009813</td><td rowspan="1">876</td></tr><tr><th colspan="4">Listner Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">tests.LoginTest</td><td><a href="#m2">testLoginForRetry</a></td><td rowspan="3">1763871036675</td><td rowspan="3">438</td></tr><tr class="retriedeven"><td><a href="#m3">testLoginForRetry</a></td></tr><tr class="retriedeven"><td><a href="#m4">testLoginForRetry</a></td></tr><tr class="retriedodd"><td rowspan="3">tests.RegistrationTest</td><td><a href="#m5">testRegisterForRetry</a></td><td rowspan="3">1763871002740</td><td rowspan="3">1462</td></tr><tr class="retriedodd"><td><a href="#m6">testRegisterForRetry</a></td></tr><tr class="retriedodd"><td><a href="#m7">testRegisterForRetry</a></td></tr><tr><th colspan="4">Listner Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">tests.LoginTest</td><td><a href="#m8">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</a></td><td rowspan="3">1763871072781</td><td rowspan="3">10907</td></tr><tr class="passedeven"><td><a href="#m9">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m10">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m11">verifyLoginFunctionalityOfTheApplicationWithValidCredentials</a></td><td rowspan="1">1763871086677</td><td rowspan="1">1723</td></tr><tr class="passedodd"><td rowspan="4">tests.RegistrationTest</td><td><a href="#m12">verifyAccountRegistationFunctionality</a></td><td rowspan="1">1763871013624</td><td rowspan="1">2768</td></tr><tr class="passedodd"><td><a href="#m13">verifyAccountRegistationFunctionalityWithDataDriven</a></td><td rowspan="3">1763871018808</td><td rowspan="3">2564</td></tr><tr class="passedodd"><td><a href="#m14">verifyAccountRegistationFunctionalityWithDataDriven</a></td></tr><tr class="passedodd"><td><a href="#m15">verifyAccountRegistationFunctionalityWithDataDriven</a></td></tr></tbody>
+</table>
+<h2>Listner Test</h2><h3 id="m0">tests.LoginTest#testLoginForRetry</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.RegistrationTest#testRegisterForRetry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.LoginTest#testLoginForRetry</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LoginTest#testLoginForRetry</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTest#testLoginForRetry</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.RegistrationTest#testRegisterForRetry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.RegistrationTest#testRegisterForRetry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.RegistrationTest#testRegisterForRetry</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.LoginTest#verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>akshaypawar320321@gmail.com</td><td>Akshay@8453</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.LoginTest#verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>akshaypawar320321@gmail.com</td><td>Akshay@1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.LoginTest#verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>akshaypawar8453@gmail.com</td><td>Akshay@1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.LoginTest#verifyLoginFunctionalityOfTheApplicationWithValidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.RegistrationTest#verifyAccountRegistationFunctionality</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method)</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.RegistrationTest#verifyAccountRegistationFunctionalityWithDataDriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td><td>vheger</td><td>fuuppql</td><td>zkchzfrx7841@gmail.com</td><td>9559307113</td><td>Jiebig6</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">tests.RegistrationTest#verifyAccountRegistationFunctionalityWithDataDriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td><td>pcmzuo</td><td>mictqdl</td><td>hlkayebj1104@gmail.com</td><td>9463603612</td><td>Oleyqk6</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">tests.RegistrationTest#verifyAccountRegistationFunctionalityWithDataDriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td><td>fhhihc</td><td>fhqoicm</td><td>jrhvluld1858@gmail.com</td><td>9595507630</td><td>Xilaqk4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

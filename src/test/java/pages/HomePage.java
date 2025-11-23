@@ -1,0 +1,29 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage {
+	
+	protected WebDriver driver;
+	
+	public HomePage(WebDriver driver) {
+		this.driver= driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	@FindBy(xpath = "//span[normalize-space()='My Account']")
+	protected WebElement myAccountLink;
+	
+	@FindBy(xpath = "//a[normalize-space()='Register']")
+	protected WebElement registerLink;
+	
+	@FindBy(xpath = "//a[text()='Login']")
+	protected WebElement loginLink;
+	
+
+}

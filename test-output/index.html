@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestNG_Listner_Suite" class="navigator-link">
+              <span class="suite-name border-failed">TestNG Listner Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestNG_Listner_Suite" class="navigator-link ">
+                    <span>C:\Users\Admin\eclipse-workspace\OpenCartProject\extentReportListner.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestNG_Listner_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestNG_Listner_Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestNG_Listner_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestNG_Listner_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestNG_Listner_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestNG_Listner_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 2 failed,  6 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNG_Listner_Suite" class="hide-methods failed suite-TestNG_Listner_Suite"> (hide)</a> <!-- hide-methods failed suite-TestNG_Listner_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Listner_Suite" class="show-methods failed suite-TestNG_Listner_Suite"> (show)</a> <!-- show-methods failed suite-TestNG_Listner_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestNG_Listner_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginForRetry">testLoginForRetry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.RegistrationTest" class="method navigator-link" hash-for-method="testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))">testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestNG_Listner_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestNG_Listner_Suite" class="hide-methods skipped suite-TestNG_Listner_Suite"> (hide)</a> <!-- hide-methods skipped suite-TestNG_Listner_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Listner_Suite" class="show-methods skipped suite-TestNG_Listner_Suite"> (show)</a> <!-- show-methods skipped suite-TestNG_Listner_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestNG_Listner_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginForRetry">testLoginForRetry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginForRetry">testLoginForRetry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLoginForRetry">testLoginForRetry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.RegistrationTest" class="method navigator-link" hash-for-method="testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))">testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.RegistrationTest" class="method navigator-link" hash-for-method="testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))">testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.RegistrationTest" class="method navigator-link" hash-for-method="testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))">testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestNG_Listner_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestNG_Listner_Suite" class="hide-methods passed suite-TestNG_Listner_Suite"> (hide)</a> <!-- hide-methods passed suite-TestNG_Listner_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Listner_Suite" class="show-methods passed suite-TestNG_Listner_Suite"> (show)</a> <!-- show-methods passed suite-TestNG_Listner_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestNG_Listner_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.RegistrationTest" class="method navigator-link" hash-for-method="verifyAccountRegistationFunctionality(public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method))">verifyAccountRegistationFunctionality(public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.RegistrationTest" class="method navigator-link" hash-for-method="verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)">verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.RegistrationTest" class="method navigator-link" hash-for-method="verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)">verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.RegistrationTest" class="method navigator-link" hash-for-method="verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)">verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@8453)">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@8453)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@1234)">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar8453@gmail.com, Akshay@1234)">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar8453@gmail.com, Akshay@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Listner_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginFunctionalityOfTheApplicationWithValidCredentials">verifyLoginFunctionalityOfTheApplicationWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestNG_Listner_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestNG_Listner_Suite" class="panel TestNG_Listner_Suite">
+          <div class="suite-TestNG_Listner_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginForRetry">
+                  </a> <!-- testLoginForRetry -->
+                  <span class="method-name">testLoginForRetry</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Listner_Suite-class-failed -->
+          <div class="suite-TestNG_Listner_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))">
+                  </a> <!-- testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)) -->
+                  <span class="method-name">testRegisterForRetry</span>
+                  <span class="parameters">(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Listner_Suite-class-failed -->
+          <div class="suite-TestNG_Listner_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginForRetry">
+                  </a> <!-- testLoginForRetry -->
+                  <span class="method-name">testLoginForRetry</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginForRetry">
+                  </a> <!-- testLoginForRetry -->
+                  <span class="method-name">testLoginForRetry</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginForRetry">
+                  </a> <!-- testLoginForRetry -->
+                  <span class="method-name">testLoginForRetry</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Listner_Suite-class-skipped -->
+          <div class="suite-TestNG_Listner_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))">
+                  </a> <!-- testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)) -->
+                  <span class="method-name">testRegisterForRetry</span>
+                  <span class="parameters">(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))">
+                  </a> <!-- testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)) -->
+                  <span class="method-name">testRegisterForRetry</span>
+                  <span class="parameters">(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))">
+                  </a> <!-- testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)) -->
+                  <span class="method-name">testRegisterForRetry</span>
+                  <span class="parameters">(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Listner_Suite-class-skipped -->
+          <div class="suite-TestNG_Listner_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@8453)">
+                  </a> <!-- verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@8453) -->
+                  <span class="method-name">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</span>
+                  <span class="parameters">(akshaypawar320321@gmail.com,Akshay@8453)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@1234)">
+                  </a> <!-- verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@1234) -->
+                  <span class="method-name">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</span>
+                  <span class="parameters">(akshaypawar320321@gmail.com,Akshay@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar8453@gmail.com, Akshay@1234)">
+                  </a> <!-- verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar8453@gmail.com, Akshay@1234) -->
+                  <span class="method-name">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</span>
+                  <span class="parameters">(akshaypawar8453@gmail.com,Akshay@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginFunctionalityOfTheApplicationWithValidCredentials">
+                  </a> <!-- verifyLoginFunctionalityOfTheApplicationWithValidCredentials -->
+                  <span class="method-name">verifyLoginFunctionalityOfTheApplicationWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Listner_Suite-class-passed -->
+          <div class="suite-TestNG_Listner_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountRegistationFunctionality(public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method))">
+                  </a> <!-- verifyAccountRegistationFunctionality(public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method)) -->
+                  <span class="method-name">verifyAccountRegistationFunctionality</span>
+                  <span class="parameters">(public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)">
+                  </a> <!-- verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...) -->
+                  <span class="method-name">verifyAccountRegistationFunctionalityWithDataDriven</span>
+                  <span class="parameters">(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String),vheger,fuuppql,zkchzfrx7841@gmail.com,9559307113,Jiebig6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)">
+                  </a> <!-- verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...) -->
+                  <span class="method-name">verifyAccountRegistationFunctionalityWithDataDriven</span>
+                  <span class="parameters">(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String),pcmzuo,mictqdl,hlkayebj1104@gmail.com,9463603612,Oleyqk6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)">
+                  </a> <!-- verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...) -->
+                  <span class="method-name">verifyAccountRegistationFunctionalityWithDataDriven</span>
+                  <span class="parameters">(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String),fhhihc,fhqoicm,jrhvluld1858@gmail.com,9595507630,Xilaqk4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Listner_Suite-class-passed -->
+        </div> <!-- panel TestNG_Listner_Suite -->
+        <div panel-name="test-xml-TestNG_Listner_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Admin\eclipse-workspace\OpenCartProject\extentReportListner.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestNG Listner Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;liseners.ListenerClass&quot;/&gt;
+    &lt;listener class-name=&quot;liseners.MyAnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Listner Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;parameter name=&quot;osName&quot; value=&quot;Linux&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Sanity&quot;/&gt;
+        &lt;include name=&quot;DataDriven&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Listner Test --&gt;
+&lt;/suite&gt; &lt;!-- TestNG Listner Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestNG_Listner_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestNG Listner Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Listner Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestNG_Listner_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestNG Listner Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">DataDriven</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAccountRegistationFunctionalityWithDataDriven</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginForRetry</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRegisterForRetry</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAccountRegistationFunctionality</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginFunctionalityOfTheApplicationWithValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestNG_Listner_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestNG Listner Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestNG_Listner_Suite');
+function tableData_TestNG_Listner_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyLoginFunctionalityOfTheApplicationWithInValidCredentials')
+data.setCell(0, 2, 'tests.LoginTest')
+data.setCell(0, 3, 11480);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLoginFunctionalityOfTheApplicationWithInValidCredentials')
+data.setCell(1, 2, 'tests.LoginTest')
+data.setCell(1, 3, 11450);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLoginFunctionalityOfTheApplicationWithInValidCredentials')
+data.setCell(2, 2, 'tests.LoginTest')
+data.setCell(2, 3, 10907);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyAccountRegistationFunctionality')
+data.setCell(3, 2, 'tests.RegistrationTest')
+data.setCell(3, 3, 2768);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyAccountRegistationFunctionalityWithDataDriven')
+data.setCell(4, 2, 'tests.RegistrationTest')
+data.setCell(4, 3, 2621);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAccountRegistationFunctionalityWithDataDriven')
+data.setCell(5, 2, 'tests.RegistrationTest')
+data.setCell(5, 3, 2564);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyAccountRegistationFunctionalityWithDataDriven')
+data.setCell(6, 2, 'tests.RegistrationTest')
+data.setCell(6, 3, 2303);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLoginFunctionalityOfTheApplicationWithValidCredentials')
+data.setCell(7, 2, 'tests.LoginTest')
+data.setCell(7, 3, 1723);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testRegisterForRetry')
+data.setCell(8, 2, 'tests.RegistrationTest')
+data.setCell(8, 3, 1462);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testRegisterForRetry')
+data.setCell(9, 2, 'tests.RegistrationTest')
+data.setCell(9, 3, 876);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testRegisterForRetry')
+data.setCell(10, 2, 'tests.RegistrationTest')
+data.setCell(10, 3, 709);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testRegisterForRetry')
+data.setCell(11, 2, 'tests.RegistrationTest')
+data.setCell(11, 3, 619);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testLoginForRetry')
+data.setCell(12, 2, 'tests.LoginTest')
+data.setCell(12, 3, 555);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testLoginForRetry')
+data.setCell(13, 2, 'tests.LoginTest')
+data.setCell(13, 3, 483);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testLoginForRetry')
+data.setCell(14, 2, 'tests.LoginTest')
+data.setCell(14, 3, 438);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testLoginForRetry')
+data.setCell(15, 2, 'tests.LoginTest')
+data.setCell(15, 3, 370);
+window.suiteTableData['TestNG_Listner_Suite']= { tableData: data, tableDiv: 'times-div-TestNG_Listner_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <div id="times-div-TestNG_Listner_Suite">
+              </div> <!-- times-div-TestNG_Listner_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestNG_Listner_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestNG Listner Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestNG_Listner_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestNG_Listner_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method), Edge, Linux)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</span>
+                <span class="method-start">2786 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3500 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method), Edge, Linux)</span>
+                <span class="method-start">3671 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</span>
+                <span class="method-start">5998 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method), Edge, Linux)</span>
+                <span class="method-start">7648 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</span>
+                <span class="method-start">10045 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10666 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method), Edge, Linux)</span>
+                <span class="method-start">10834 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRegisterForRetry(public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method))</span>
+                <span class="method-start">13071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14174 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method), ...)</span>
+                <span class="method-start">14356 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAccountRegistationFunctionality(public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method))</span>
+                <span class="method-start">16882 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19652 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)</span>
+                <span class="method-start">19835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)</span>
+                <span class="method-start">22066 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24631 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)</span>
+                <span class="method-start">24798 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)</span>
+                <span class="method-start">26633 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28937 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)</span>
+                <span class="method-start">29118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAccountRegistationFunctionalityWithDataDriven(public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.ref...)</span>
+                <span class="method-start">31304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33926 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.LoginTest.testLoginForRetry(), Edge, Linux)</span>
+                <span class="method-start">34120 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginForRetry</span>
+                <span class="method-start">37075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37632 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.LoginTest.testLoginForRetry(), Edge, Linux)</span>
+                <span class="method-start">37808 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginForRetry</span>
+                <span class="method-start">39933 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40374 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.LoginTest.testLoginForRetry(), Edge, Linux)</span>
+                <span class="method-start">40555 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginForRetry</span>
+                <span class="method-start">42474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">42847 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.LoginTest.testLoginForRetry(), Edge, Linux)</span>
+                <span class="method-start">43033 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLoginForRetry</span>
+                <span class="method-start">44970 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">45696 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang...)</span>
+                <span class="method-start">45850 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@1234)</span>
+                <span class="method-start">47974 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59456 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang...)</span>
+                <span class="method-start">59658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar8453@gmail.com, Akshay@1234)</span>
+                <span class="method-start">61423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">72875 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang...)</span>
+                <span class="method-start">73089 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(akshaypawar320321@gmail.com, Akshay@8453)</span>
+                <span class="method-start">76039 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86948 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithValidCredentials(), Edge, Li...)</span>
+                <span class="method-start">87145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionalityOfTheApplicationWithValidCredentials</span>
+                <span class="method-start">89935 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">91659 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

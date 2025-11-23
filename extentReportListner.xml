@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Listner Suite">
+	<listeners>
+		<listener class-name="liseners.ListenerClass"></listener>
+		<listener class-name="liseners.MyAnnotationTransformer"></listener>
+	</listeners>
+	<test name="Listner Test">
+		<parameter name="browser" value="Edge" />
+		<parameter name="osName" value="Linux" />
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+				<include name="DataDriven"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.RegistrationTest" />
+			<class name="tests.LoginTest" />
+		</classes>
+	</test>
+</suite> 

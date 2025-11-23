@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="6" ignored="6" total="22" passed="8" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-23T09:39:56 IST" name="TestNG Listner Suite" finished-at="2025-11-23T09:41:28 IST" duration-ms="91865">
+    <groups>
+      <group name="Sanity">
+        <method signature="LoginTest.testLoginForRetry()[pri:0, instance:tests.LoginTest@3f23a3a0]" name="testLoginForRetry" class="tests.LoginTest"/>
+        <method signature="LoginTest.verifyLoginFunctionalityOfTheApplicationWithValidCredentials()[pri:0, instance:tests.LoginTest@3f23a3a0]" name="verifyLoginFunctionalityOfTheApplicationWithValidCredentials" class="tests.LoginTest"/>
+        <method signature="RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" name="testRegisterForRetry" class="tests.RegistrationTest"/>
+        <method signature="RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" name="verifyAccountRegistationFunctionality" class="tests.RegistrationTest"/>
+      </group> <!-- Sanity -->
+      <group name="DataDriven">
+        <method signature="LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" name="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials" class="tests.LoginTest"/>
+        <method signature="RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" name="verifyAccountRegistationFunctionalityWithDataDriven" class="tests.RegistrationTest"/>
+      </group> <!-- DataDriven -->
+    </groups>
+    <test started-at="2025-11-23T09:39:56 IST" name="Listner Test" finished-at="2025-11-23T09:41:28 IST" duration-ms="91865">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:30 IST" name="setup" finished-at="2025-11-23T09:40:33 IST" duration-ms="2955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.testLoginForRetry()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="testLoginForRetry()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:33 IST" name="testLoginForRetry" finished-at="2025-11-23T09:40:34 IST" duration-ms="555" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginForRetry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:34 IST" name="tearDown" finished-at="2025-11-23T09:40:34 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:34 IST" name="setup" finished-at="2025-11-23T09:40:36 IST" duration-ms="2125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.testLoginForRetry()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="testLoginForRetry()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:36 IST" name="testLoginForRetry" finished-at="2025-11-23T09:40:37 IST" duration-ms="438" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginForRetry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:37 IST" name="tearDown" finished-at="2025-11-23T09:40:37 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:37 IST" name="setup" finished-at="2025-11-23T09:40:39 IST" duration-ms="1919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.testLoginForRetry()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="testLoginForRetry()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:39 IST" name="testLoginForRetry" finished-at="2025-11-23T09:40:39 IST" duration-ms="370" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginForRetry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:39 IST" name="tearDown" finished-at="2025-11-23T09:40:39 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:39 IST" name="setup" finished-at="2025-11-23T09:40:41 IST" duration-ms="1937" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.testLoginForRetry()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginForRetry()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:41 IST" name="testLoginForRetry" finished-at="2025-11-23T09:40:42 IST" duration-ms="483" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at tests.LoginTest.testLoginForRetry(LoginTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginForRetry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:42 IST" name="tearDown" finished-at="2025-11-23T09:40:42 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:42 IST" name="setup" finished-at="2025-11-23T09:40:44 IST" duration-ms="2124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:44 IST" name="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials" data-provider="InValidLoginData" finished-at="2025-11-23T09:40:56 IST" duration-ms="11480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akshaypawar320321@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Akshay@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionalityOfTheApplicationWithInValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:56 IST" name="tearDown" finished-at="2025-11-23T09:40:56 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:56 IST" name="setup" finished-at="2025-11-23T09:40:58 IST" duration-ms="1764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:40:58 IST" name="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials" data-provider="InValidLoginData" finished-at="2025-11-23T09:41:09 IST" duration-ms="11450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akshaypawar8453@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Akshay@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionalityOfTheApplicationWithInValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:41:09 IST" name="tearDown" finished-at="2025-11-23T09:41:09 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:41:09 IST" name="setup" finished-at="2025-11-23T09:41:12 IST" duration-ms="2950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:41:12 IST" name="verifyLoginFunctionalityOfTheApplicationWithInValidCredentials" data-provider="InValidLoginData" finished-at="2025-11-23T09:41:23 IST" duration-ms="10907" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akshaypawar320321@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Akshay@8453]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionalityOfTheApplicationWithInValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:41:23 IST" name="tearDown" finished-at="2025-11-23T09:41:23 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:41:23 IST" name="setup" finished-at="2025-11-23T09:41:26 IST" duration-ms="2790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithValidCredentials()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginFunctionalityOfTheApplicationWithValidCredentials()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:41:26 IST" name="verifyLoginFunctionalityOfTheApplicationWithValidCredentials" finished-at="2025-11-23T09:41:28 IST" duration-ms="1723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFunctionalityOfTheApplicationWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@3f23a3a0]" started-at="2025-11-23T09:41:28 IST" name="tearDown" finished-at="2025-11-23T09:41:28 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.RegistrationTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:39:56 IST" name="setup" finished-at="2025-11-23T09:39:59 IST" duration-ms="2785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="testRegisterForRetry(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:39:59 IST" name="testRegisterForRetry" finished-at="2025-11-23T09:40:00 IST" duration-ms="709" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterForRetry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:00 IST" name="tearDown" finished-at="2025-11-23T09:40:00 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:00 IST" name="setup" finished-at="2025-11-23T09:40:02 IST" duration-ms="2327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="testRegisterForRetry(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:02 IST" name="testRegisterForRetry" finished-at="2025-11-23T09:40:04 IST" duration-ms="1462" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterForRetry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:04 IST" name="tearDown" finished-at="2025-11-23T09:40:04 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:04 IST" name="setup" finished-at="2025-11-23T09:40:06 IST" duration-ms="2397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="testRegisterForRetry(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:06 IST" name="testRegisterForRetry" finished-at="2025-11-23T09:40:07 IST" duration-ms="619" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterForRetry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:07 IST" name="tearDown" finished-at="2025-11-23T09:40:07 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:07 IST" name="setup" finished-at="2025-11-23T09:40:09 IST" duration-ms="2237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegisterForRetry(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:09 IST" name="testRegisterForRetry" finished-at="2025-11-23T09:40:10 IST" duration-ms="876" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterForRetry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:10 IST" name="tearDown" finished-at="2025-11-23T09:40:11 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:11 IST" name="setup" finished-at="2025-11-23T09:40:13 IST" duration-ms="2526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAccountRegistationFunctionality(java.lang.reflect.Method)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:13 IST" name="verifyAccountRegistationFunctionality" finished-at="2025-11-23T09:40:16 IST" duration-ms="2768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountRegistationFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:16 IST" name="tearDown" finished-at="2025-11-23T09:40:16 IST" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:16 IST" name="setup" finished-at="2025-11-23T09:40:18 IST" duration-ms="2230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:18 IST" name="verifyAccountRegistationFunctionalityWithDataDriven" data-provider="RegistrationData" finished-at="2025-11-23T09:40:21 IST" duration-ms="2564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vheger]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fuuppql]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[zkchzfrx7841@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9559307113]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Jiebig6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountRegistationFunctionalityWithDataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:21 IST" name="tearDown" finished-at="2025-11-23T09:40:21 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:21 IST" name="setup" finished-at="2025-11-23T09:40:23 IST" duration-ms="1835" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:23 IST" name="verifyAccountRegistationFunctionalityWithDataDriven" data-provider="RegistrationData" finished-at="2025-11-23T09:40:25 IST" duration-ms="2303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pcmzuo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mictqdl]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[hlkayebj1104@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9463603612]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Oleyqk6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountRegistationFunctionalityWithDataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:25 IST" name="tearDown" finished-at="2025-11-23T09:40:25 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:25 IST" name="setup" finished-at="2025-11-23T09:40:28 IST" duration-ms="2186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:28 IST" name="verifyAccountRegistationFunctionalityWithDataDriven" data-provider="RegistrationData" finished-at="2025-11-23T09:40:30 IST" duration-ms="2621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fhhihc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fhqoicm]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[jrhvluld1858@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9595507630]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Xilaqk4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountRegistationFunctionalityWithDataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@5f3b9c57]" started-at="2025-11-23T09:40:30 IST" name="tearDown" finished-at="2025-11-23T09:40:30 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RegistrationTest -->
+    </test> <!-- Listner Test -->
+  </suite> <!-- TestNG Listner Suite -->
+</testng-results>

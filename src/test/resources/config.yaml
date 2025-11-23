@@ -1,0 +1,16 @@
+app:
+  url: "https://tutorialsninja.com/demo/"
+  browser: "chrome"
+  emailId: "akshaypawar8453@gmail.com"
+  password: "Akshay@8453"
+  invalidEmail: "akshaypawar320321@gmail.com"
+  invalidPassword: "Akshay@1234"
+  appPassword: "xxby xbkc paax qjfc"
+
+timeout:
+  implicit: 10
+  explicit: 20
+
+db:
+  username: "root"
+  password: "test123"
