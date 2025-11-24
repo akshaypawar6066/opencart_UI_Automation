@@ -3,11 +3,13 @@
 <suite name="TestNG Listner Suite">
 	<listeners>
 		<listener class-name="liseners.ListenerClass"></listener>
-		<listener class-name="liseners.MyAnnotationTransformer"></listener>
+		<!--listener class-name="liseners.MyAnnotationTransformer"></listener>-->
 	</listeners>
 	<test name="Listner Test">
 		<parameter name="browser" value="Edge" />
 		<parameter name="osName" value="Linux" />
+		<parameter name="remoteExecution" value="false" />
+		<parameter name="remoteURL" value="http://localhost:4444/ui/"/>
 		<groups>
 			<run>
 				<include name="Sanity"></include>

@@ -2,8 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestNG Groups Suite">
 	<test thread-count="5" name="Master Test">
-		<parameter name="browser" value="edge" />
-		<parameter name="osName" value="Windows" />
+		<parameter name="browser" value="Edge" />
+		<parameter name="osName" value="Linux" />
+		<parameter name="remoteExecution" value="false" />
+		<parameter name="remoteURL" value="http://localhost:4444/ui/"/>
 		<groups>
 			<run>
 				<include name="Sanity" />

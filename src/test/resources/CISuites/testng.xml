@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Groups Suite">
+	<listeners>
+		<listener class-name="liseners.ListenerClass"></listener>
+		<!--listener class-name="liseners.MyAnnotationTransformer"></listener>-->
+	</listeners>
+	<test name="Listner Test">
+		<parameter name="browser" value="Chrome"/>
+		<parameter name="osName" value="Windows"/>
+		<parameter name="remoteExecution" value="true" />
+		<parameter name="remoteURL" value="http://localhost:4444"/>
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.RegistrationTest" />
+			<class name="tests.LoginTest" />
+		</classes>
+	</test>
+</suite> 
