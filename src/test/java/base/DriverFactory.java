@@ -1,5 +1,6 @@
 package base;
 
+import java.net.URL;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,6 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utility.ConfigReader;
@@ -22,22 +24,40 @@ public class DriverFactory {
 	// ==========================
 	// SET BROWSER DRIVER
 	// ==========================
-	public static void setDriver(String browserName) {
+	public static void setDriver(String browserName, boolean isRemote, String remoteURL) {
+	    try {
+	        if (isRemote) {
+	            URL url = new URL(remoteURL); // e.g. "http://localhost:4444"
+	            if (browserName.equalsIgnoreCase("chrome")) {
+	                driver.set(new RemoteWebDriver(url, getChromeOptions()));
+	            } else if (browserName.equalsIgnoreCase("edge")) {
+	                driver.set(new RemoteWebDriver(url, getEdgeOptions()));
+	            } else if (browserName.equalsIgnoreCase("firefox")) {
+	                driver.set(new RemoteWebDriver(url, getFirefoxOptions()));
+	            } else {
+	                throw new IllegalArgumentException("Unsupported Browser: " + browserName);
+	            }
+	        } else {
+	            // local
+	            if (browserName.equalsIgnoreCase("chrome")) {
+	                driver.set(new ChromeDriver(getChromeOptions()));
+	            } else if (browserName.equalsIgnoreCase("edge")) {
+	                driver.set(new EdgeDriver(getEdgeOptions()));
+	            } else if (browserName.equalsIgnoreCase("firefox")) {
+	                driver.set(new FirefoxDriver(getFirefoxOptions()));
+	            } else {
+	                throw new IllegalArgumentException("Unsupported Browser: " + browserName);
+	            }
+	        }
+	    } catch (Exception e) {
+	        throw new RuntimeException("Failed to initialize driver: " + e.getMessage(), e);
+	    }
 
-		if (browserName.equalsIgnoreCase("chrome")) {
-			driver.set(new ChromeDriver(getChromeOptions()));
-		} else if (browserName.equalsIgnoreCase("edge")) {
-			driver.set(new EdgeDriver(getEdgeOptions()));
-		} else if (browserName.equalsIgnoreCase("firefox")) {
-			driver.set(new FirefoxDriver(getFirefoxOptions()));
-		} else {
-			throw new IllegalArgumentException("Unsupported Browser: " + browserName);
-		}
-
-		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		getDriver().get(ConfigReader.get("app.url"));
-		WaitUtil.waitForPageLoad(getDriver());
+	    getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    getDriver().get(ConfigReader.get("app.url"));
+	    WaitUtil.waitForPageLoad(getDriver());
 	}
+
 
 	// ==========================
 	// CHROME OPTIONS

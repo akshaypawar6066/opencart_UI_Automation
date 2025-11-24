@@ -27,7 +27,7 @@ public class RegistrationTest extends BaseClass {
 		registrationFlow.verifyRegistationIsSuccefullyDoneOrNot("Your Account Has Been Created!");
 	}
 	
-	@Test(enabled = true, groups = {"Sanity"}, retryAnalyzer = liseners.ListenerClass.class)
+	@Test(enabled = true, groups = {"Sanity"})
 	public void testRegisterForRetry(Method method) {
 		driver = DriverFactory.getDriver();
 		

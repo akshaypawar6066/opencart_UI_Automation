@@ -3,11 +3,12 @@
 <suite name="Failed suite [TestNG Listner Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="liseners.ListenerClass"/>
-    <listener class-name="liseners.MyAnnotationTransformer"/>
   </listeners>
   <test thread-count="5" name="Listner Test(failed)">
     <parameter name="browser" value="Edge"/>
+    <parameter name="remoteURL" value="http://localhost:4444/ui/"/>
     <parameter name="osName" value="Linux"/>
+    <parameter name="remoteExecution" value="false"/>
     <groups>
       <run>
         <include name="Sanity"/>

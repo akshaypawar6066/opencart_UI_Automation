@@ -12,6 +12,7 @@ import flows.MyAccountFlow;
 import utility.ConfigReader;
 import utility.DataProviderClass;
 
+
 public class LoginTest extends BaseClass {
 	
 	WebDriver driver;
@@ -31,7 +32,7 @@ public class LoginTest extends BaseClass {
 		
 	}
 	
-	@Test(enabled = true, groups = {"Sanity"}, retryAnalyzer = liseners.ListenerClass.class)
+	@Test(enabled = true, groups = {"Sanity"})
 	public void testLoginForRetry() {
 		driver = DriverFactory.getDriver();	
 		

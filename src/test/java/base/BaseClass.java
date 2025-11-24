@@ -12,14 +12,18 @@ import utility.Log;
 
 public class BaseClass {
 
-	@Parameters({ "browser", "osName" })
+	@Parameters({ "browser", "osName", "remoteExecution", "remoteURL" })
 	@BeforeMethod(alwaysRun = true)
-	public void setup(Method method, @Optional("Chrome") String browser, @Optional("Windows") String osName) {
-		// System.out.println("Starting test in a thread:" +
-		// Thread.currentThread().getId());
-		DriverFactory.setDriver(browser);
-	    Log.info("Starting Test Case: " + method.getName());
-	    Log.info("Browser: " + browser + " | OS: " + osName);
+	public void setup(Method method, 
+			@Optional("Chrome") String browser,
+			@Optional("Windows") String osName,
+			@Optional("false") String remoteExecution, 
+			@Optional("http://localhost:4444/ui/") String remoteURL) {
+		
+		boolean isRemote = Boolean.parseBoolean(remoteExecution);
+		DriverFactory.setDriver(browser, isRemote, remoteURL);
+		Log.info("Starting Test Case: " + method.getName());
+		Log.info("Browser: " + browser + " | OS: " + osName);
 	}
 
 	public WebDriver getDriver() {

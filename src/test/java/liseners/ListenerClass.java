@@ -34,12 +34,19 @@ public class ListenerClass implements ITestListener, ISuiteListener, IRetryAnaly
 	// From I TestListner->Will execute before all tests once.
 	@Override
 	public void onStart(ITestContext context) {
-		String browser = context.getCurrentXmlTest().getParameter("browser");
-		String OsName = context.getCurrentXmlTest().getParameter("osName");
+		String browser = System.getProperty("browser");
+		String osName = System.getProperty("osName");
+		
+	    if (browser == null || browser.isEmpty()) {
+	        browser = context.getCurrentXmlTest().getParameter("browser");
+	    }
+	    if (osName == null || osName.isEmpty()) {
+	        osName = context.getCurrentXmlTest().getParameter("osName");
+	    }
 		List<String> groups = context.getCurrentXmlTest().getIncludedGroups();
 
 		extent.setSystemInfo("Browser", browser);
-		extent.setSystemInfo("OS", OsName);
+		extent.setSystemInfo("OS", osName);
 		extent.setSystemInfo("Groups", String.join(",", groups));
 	}
 

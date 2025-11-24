@@ -1,44 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [Open Cart Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="Chrome Test(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="osName" value="windows"/>
+  <listeners>
+    <listener class-name="liseners.ListenerClass"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Chrome Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="remoteURL" value="http://localhost:4444"/>
+    <parameter name="osName" value="Linux"/>
+    <parameter name="remoteExecution" value="false"/>
     <groups>
       <run>
         <include name="Sanity"/>
+        <include name="DataDriven"/>
       </run>
     </groups>
     <classes>
       <class name="tests.LoginTest">
         <methods>
-          <include name="verifyLoginFunctionalityOfTheApplicationWithValidCredentials"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testLoginForRetry"/>
         </methods>
       </class> <!-- tests.LoginTest -->
       <class name="tests.RegistrationTest">
         <methods>
+          <include name="verifyAccountRegistationFunctionalityWithDataDriven" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
           <include name="verifyAccountRegistationFunctionality" invocation-numbers="0"/>
+          <include name="testRegisterForRetry" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.RegistrationTest -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
-  <test thread-count="2" parallel="tests" name="Edge Test(failed)">
-    <parameter name="browser" value="edge"/>
+  <test thread-count="2" parallel="methods" name="Edge Test(failed)">
+    <parameter name="browser" value="Edge"/>
+    <parameter name="remoteURL" value="http://localhost:4444"/>
     <parameter name="osName" value="Linux"/>
+    <parameter name="remoteExecution" value="false"/>
     <groups>
       <run>
         <include name="Sanity"/>
+        <include name="DataDriven"/>
       </run>
     </groups>
     <classes>
       <class name="tests.LoginTest">
         <methods>
-          <include name="verifyLoginFunctionalityOfTheApplicationWithValidCredentials"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testLoginForRetry"/>
         </methods>
       </class> <!-- tests.LoginTest -->
       <class name="tests.RegistrationTest">
         <methods>
-          <include name="verifyAccountRegistationFunctionality" invocation-numbers="0"/>
+          <include name="verifyAccountRegistationFunctionalityWithDataDriven" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testRegisterForRetry" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.RegistrationTest -->
     </classes>
