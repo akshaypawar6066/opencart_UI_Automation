@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Edge Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Nov 23 17:45:29 IST 2025</td>
+<td>Started on:</td><td>Mon Nov 24 21:33:46 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>203 seconds (203502 ms)</td>
+<tr><td>Total time:</td><td>83 seconds (83086 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>Sanity DataDriven </td>
+<td>Included groups:</td><td>Sanity </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,93 +76,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven()'><b>verifyAccountRegistationFunctionalityWithDataDriven</b><br>Test class: tests.RegistrationTest<br>Parameters: public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String), xzqlgt, jtnmbgt, lkqqhkga1382@gmail.com, 9945802509, Tirgrb0</td>
-<td><div><pre>java.lang.AssertionError: WebElement is NOT Visible: LastName. Reason: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, findElement {using=xpath, value=//input[@id=&apos;input-lastname&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 19616, ms:edgeOptions: {debuggerAddress: localhost:52262}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52262/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at utility.WaitUtil.waitForTheElementToBeVisible(WaitUtil.java:41)
-	at utility.WebElementActions.sendKeys(WebElementActions.java:25)
-	at flows.RegistrationFlow.enterLastName(RegistrationFlow.java:24)
-	at flows.RegistrationFlow.completeRegistration(RegistrationFlow.java:66)
-	at tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(RegistrationTest.java:50)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace301106482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace301106482'><pre>java.lang.AssertionError: WebElement is NOT Visible: LastName. Reason: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, findElement {using=xpath, value=//input[@id=&apos;input-lastname&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: MicrosoftEdge, browserVersion: 142.0.3595.94, fedcm:accounts: true, goog:processID: 19616, ms:edgeOptions: {debuggerAddress: localhost:52262}, msedge: {msedgedriverVersion: 142.0.3595.94 (6565d6e52817..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52262/devtoo..., se:cdpVersion: 142.0.3595.94, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.testng.Assert.fail(Assert.java:111)
-	at utility.WaitUtil.waitForTheElementToBeVisible(WaitUtil.java:41)
-	at utility.WebElementActions.sendKeys(WebElementActions.java:25)
-	at flows.RegistrationFlow.enterLastName(RegistrationFlow.java:24)
-	at flows.RegistrationFlow.completeRegistration(RegistrationFlow.java:66)
-	at tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(RegistrationTest.java:50)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>184</td>
-<td>tests.RegistrationTest@11acdc30</td></tr>
-<tr>
-<td title='tests.LoginTest.testLoginForRetry()'><b>testLoginForRetry</b><br>Test class: tests.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: null
-	at tests.LoginTest.testLoginForRetry(LoginTest.java:45)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace226576898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace226576898'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at tests.LoginTest.testLoginForRetry(LoginTest.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>0</td>
-<td>tests.LoginTest@770d4269</td></tr>
-<tr>
 <td title='tests.RegistrationTest.testRegisterForRetry()'><b>testRegisterForRetry</b><br>Test class: tests.RegistrationTest<br>Parameters: public void tests.RegistrationTest.testRegisterForRetry(java.lang.reflect.Method)</td>
 <td><div><pre>java.lang.AssertionError: null
 	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
@@ -171,8 +84,8 @@ Capabilities {acceptInsecureCerts: true, browserName: MicrosoftEdge, browserVers
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace381374916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace381374916'><pre>java.lang.AssertionError: null
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1300439986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1300439986'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.fail(Assert.java:116)
 	at tests.RegistrationTest.testRegisterForRetry(RegistrationTest.java:38)
@@ -196,7 +109,42 @@ Capabilities {acceptInsecureCerts: true, browserName: MicrosoftEdge, browserVers
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>4</td>
-<td>tests.RegistrationTest@11acdc30</td></tr>
+<td>tests.RegistrationTest@770d4269</td></tr>
+<tr>
+<td title='tests.LoginTest.testLoginForRetry()'><b>testLoginForRetry</b><br>Test class: tests.LoginTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:45)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1606166472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1606166472'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at tests.LoginTest.testLoginForRetry(LoginTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>3</td>
+<td>tests.LoginTest@4a8ab068</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -207,40 +155,15 @@ Capabilities {acceptInsecureCerts: true, browserName: MicrosoftEdge, browserVers
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven()'><b>verifyAccountRegistationFunctionalityWithDataDriven</b><br>Test class: tests.RegistrationTest<br>Parameters: public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String), dqlaee, hpjqlhy, zhkolrbw2818@gmail.com, 9497957879, Lbgrkt8</td>
-<td></td>
-<td>2</td>
-<td>tests.RegistrationTest@11acdc30</td></tr>
-<tr>
-<td title='tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven()'><b>verifyAccountRegistationFunctionalityWithDataDriven</b><br>Test class: tests.RegistrationTest<br>Parameters: public void tests.RegistrationTest.verifyAccountRegistationFunctionalityWithDataDriven(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String), pisyld, erupbof, zpmeapyr367@gmail.com, 9266828644, Obuwfb7</td>
-<td></td>
-<td>2</td>
-<td>tests.RegistrationTest@11acdc30</td></tr>
-<tr>
-<td title='tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials()'><b>verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</b><br>Test class: tests.LoginTest<br>Parameters: akshaypawar320321@gmail.com, Akshay@1234</td>
-<td></td>
-<td>12</td>
-<td>tests.LoginTest@770d4269</td></tr>
-<tr>
 <td title='tests.RegistrationTest.verifyAccountRegistationFunctionality()'><b>verifyAccountRegistationFunctionality</b><br>Test class: tests.RegistrationTest<br>Parameters: public void tests.RegistrationTest.verifyAccountRegistationFunctionality(java.lang.reflect.Method)</td>
 <td></td>
-<td>8</td>
-<td>tests.RegistrationTest@11acdc30</td></tr>
+<td>24</td>
+<td>tests.RegistrationTest@770d4269</td></tr>
 <tr>
 <td title='tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithValidCredentials()'><b>verifyLoginFunctionalityOfTheApplicationWithValidCredentials</b><br>Test class: tests.LoginTest</td>
 <td></td>
-<td>2</td>
-<td>tests.LoginTest@770d4269</td></tr>
-<tr>
-<td title='tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials()'><b>verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</b><br>Test class: tests.LoginTest<br>Parameters: akshaypawar320321@gmail.com, Akshay@8453</td>
-<td></td>
-<td>11</td>
-<td>tests.LoginTest@770d4269</td></tr>
-<tr>
-<td title='tests.LoginTest.verifyLoginFunctionalityOfTheApplicationWithInValidCredentials()'><b>verifyLoginFunctionalityOfTheApplicationWithInValidCredentials</b><br>Test class: tests.LoginTest<br>Parameters: akshaypawar8453@gmail.com, Akshay@1234</td>
-<td></td>
-<td>12</td>
-<td>tests.LoginTest@770d4269</td></tr>
+<td>23</td>
+<td>tests.LoginTest@4a8ab068</td></tr>
 </table><p>
 </body>
 </html>

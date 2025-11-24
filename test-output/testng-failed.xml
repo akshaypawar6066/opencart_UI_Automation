@@ -8,7 +8,7 @@
     <parameter name="browser" value="Chrome"/>
     <parameter name="remoteURL" value="http://localhost:4444"/>
     <parameter name="osName" value="Windows"/>
-    <parameter name="remoteExecution" value="true"/>
+    <parameter name="remoteExecution" value="false"/>
     <groups>
       <run>
         <include name="Sanity"/>

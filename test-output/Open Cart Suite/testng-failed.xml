@@ -4,15 +4,14 @@
   <listeners>
     <listener class-name="liseners.ListenerClass"/>
   </listeners>
-  <test thread-count="2" parallel="methods" name="Chrome Test(failed)">
+  <test thread-count="2" parallel="classes" name="Chrome Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <parameter name="remoteURL" value="http://localhost:4444"/>
-    <parameter name="osName" value="Linux"/>
-    <parameter name="remoteExecution" value="false"/>
+    <parameter name="osName" value="Windows"/>
+    <parameter name="remoteExecution" value="true"/>
     <groups>
       <run>
         <include name="Sanity"/>
-        <include name="DataDriven"/>
       </run>
     </groups>
     <classes>
@@ -25,24 +24,21 @@
       </class> <!-- tests.LoginTest -->
       <class name="tests.RegistrationTest">
         <methods>
-          <include name="verifyAccountRegistationFunctionalityWithDataDriven" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyAccountRegistationFunctionality" invocation-numbers="0"/>
           <include name="testRegisterForRetry" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.RegistrationTest -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
-  <test thread-count="2" parallel="methods" name="Edge Test(failed)">
+  <test thread-count="2" parallel="classes" name="Edge Test(failed)">
     <parameter name="browser" value="Edge"/>
     <parameter name="remoteURL" value="http://localhost:4444"/>
     <parameter name="osName" value="Linux"/>
-    <parameter name="remoteExecution" value="false"/>
+    <parameter name="remoteExecution" value="true"/>
     <groups>
       <run>
         <include name="Sanity"/>
-        <include name="DataDriven"/>
       </run>
     </groups>
     <classes>
@@ -55,7 +51,6 @@
       </class> <!-- tests.LoginTest -->
       <class name="tests.RegistrationTest">
         <methods>
-          <include name="verifyAccountRegistationFunctionalityWithDataDriven" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="testRegisterForRetry" invocation-numbers="0"/>

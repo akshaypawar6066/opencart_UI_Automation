@@ -1,5 +1,8 @@
 package liseners;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -24,9 +27,8 @@ import utility.ReportCleaner;
 import utility.ScreenshotUtil;
 
 public class ListenerClass implements ITestListener, ISuiteListener, IRetryAnalyzer {
-	
-	int retryCount = 0, maxRetryCount = 3;
 
+	int retryCount = 0, maxRetryCount = 3;
 
 	private static ExtentReports extent = ExtentReportManager.getInstance();
 	ThreadLocal<ExtentTest> test = new ThreadLocal<>();
@@ -36,13 +38,13 @@ public class ListenerClass implements ITestListener, ISuiteListener, IRetryAnaly
 	public void onStart(ITestContext context) {
 		String browser = System.getProperty("browser");
 		String osName = System.getProperty("osName");
-		
-	    if (browser == null || browser.isEmpty()) {
-	        browser = context.getCurrentXmlTest().getParameter("browser");
-	    }
-	    if (osName == null || osName.isEmpty()) {
-	        osName = context.getCurrentXmlTest().getParameter("osName");
-	    }
+
+		if (browser == null || browser.isEmpty()) {
+			browser = context.getCurrentXmlTest().getParameter("browser");
+		}
+		if (osName == null || osName.isEmpty()) {
+			osName = context.getCurrentXmlTest().getParameter("osName");
+		}
 		List<String> groups = context.getCurrentXmlTest().getIncludedGroups();
 
 		extent.setSystemInfo("Browser", browser);
@@ -59,33 +61,52 @@ public class ListenerClass implements ITestListener, ISuiteListener, IRetryAnaly
 
 	@Override
 	public void onFinish(ISuite suite) {
-	    System.out.println("Test Suite Finished: " + suite.getName());
-	    extent.flush();
-	    /*
+		System.out.println("Test Suite Finished: " + suite.getName());
+		extent.flush();
 
-	    // Paths of files to attach
-	    String reportFolder = System.getProperty("user.dir") + "/reports";
-	    String reportPath = FileUtil.getLatestFile(reportFolder, ".html");
-	    
-	    String logPath = System.getProperty("user.dir") + "/logs/automation.log"; 
+		// To open report automatically.
+		/*
+		 * try { File reportFolder = new File(System.getProperty("user.dir") +
+		 * "/reports"); File[] files = reportFolder.listFiles((dir, name) ->
+		 * name.endsWith(".html"));
+		 * 
+		 * if (files == null || files.length == 0) {
+		 * System.out.println("No HTML report found."); return; }
+		 * 
+		 * // Find the latest file File latestReport = Arrays.stream(files) .max((f1,
+		 * f2) -> Long.compare(f1.lastModified(), f2.lastModified())) .orElse(null);
+		 * 
+		 * if (latestReport != null) {
+		 * Desktop.getDesktop().browse(latestReport.toURI());
+		 * System.out.println("Latest report opened: " + latestReport.getName()); } else
+		 * { System.out.println("Latest report not found."); }
+		 * 
+		 * } catch (Exception e) { e.printStackTrace(); }
+		 * 
+		 */
 
-	    String[] attachments = { reportPath, logPath };
-
-	    // Send email
-	    EmailUtil.sendEmailWithAttachments(
-	        "akshaypawar6066@gmail.com", // from
-	        ConfigReader.get("app.appPassword"),         // Gmail app password
-	        "akshaypawar8369@gmail.com",  // to
-	        "Automation Test Suite Report",
-	        "Hi Team,\n\nPlease find the attached test execution report and logs.\n\nRegards,\nAutomation Team",
-	        attachments
-	    );
-	    */
+		/*
+		 * 
+		 * // Paths of files to attach String reportFolder =
+		 * System.getProperty("user.dir") + "/reports"; String reportPath =
+		 * FileUtil.getLatestFile(reportFolder, ".html");
+		 * 
+		 * String logPath = System.getProperty("user.dir") + "/logs/automation.log";
+		 * 
+		 * String[] attachments = { reportPath, logPath };
+		 * 
+		 * // Send email EmailUtil.sendEmailWithAttachments(
+		 * "akshaypawar6066@gmail.com", // from ConfigReader.get("app.appPassword"), //
+		 * Gmail app password "akshaypawar8369@gmail.com", // to
+		 * "Automation Test Suite Report",
+		 * "Hi Team,\n\nPlease find the attached test execution report and logs.\n\nRegards,\nAutomation Team"
+		 * , attachments );
+		 */
 	}
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		String fullTestName= result.getMethod().getTestClass().getName() + "." + result.getMethod().getMethodName();
+		String fullTestName = result.getMethod().getTestClass().getName() + "." + result.getMethod().getMethodName();
 		ExtentTest extentTest = extent.createTest(fullTestName);
 		test.set(extentTest);
 		test.get().log(Status.INFO, "Starting Test: " + result.getMethod().getMethodName());
@@ -116,13 +137,13 @@ public class ListenerClass implements ITestListener, ISuiteListener, IRetryAnaly
 			Log.info("⚠ Screenshot skipped: Driver was NULL");
 		}
 	}
-	
+
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		test.get().log(Status.SKIP, "Test Skipped_Skipped:"+result.getMethod().getMethodName());
+		test.get().log(Status.SKIP, "Test Skipped_Skipped:" + result.getMethod().getMethodName());
 		test.get().assignCategory(result.getMethod().getGroups());
 	}
-	
+
 	@Override
 	public boolean retry(ITestResult result) {
 		if (retryCount < maxRetryCount) {
@@ -132,9 +153,10 @@ public class ListenerClass implements ITestListener, ISuiteListener, IRetryAnaly
 		}
 		return false;
 	}
+
 	@Override
 	public void onFinish(ITestContext context) {
-		
+
 	}
 
 }

@@ -5,15 +5,14 @@
 		<listener class-name="liseners.ListenerClass"></listener>
 		<!--listener class-name="liseners.MyAnnotationTransformer"></listener>-->
 	</listeners>
-	<test name="Chrome Test" parallel="methods" thread-count="3">
+	<test name="Chrome Test">
 		<parameter name="browser" value="Chrome" />
-		<parameter name="osName" value="Linux" />
-		<parameter name="remoteExecution" value="false" />
+		<parameter name="osName" value="Windows" />
+		<parameter name="remoteExecution" value="true" />
 		<parameter name="remoteURL" value="http://localhost:4444" />
 		<groups>
 			<run>
 				<include name="Sanity"></include>
-				<include name="DataDriven"></include>
 			</run>
 		</groups>
 		<classes>
@@ -21,20 +20,19 @@
 			<class name="tests.LoginTest" />
 		</classes>
 	</test>
-	<test name="Edge Test" parallel="methods" thread-count="3">
+	<test name="Edge Test">
 		<parameter name="browser" value="Edge" />
 		<parameter name="osName" value="Linux" />
-		<parameter name="remoteExecution" value="false" />
+		<parameter name="remoteExecution" value="true" />
 		<parameter name="remoteURL" value="http://localhost:4444" />
 		<groups>
 			<run>
 				<include name="Sanity"></include>
-				<include name="DataDriven"></include>
 			</run>
 		</groups>
 		<classes>
 			<class name="tests.RegistrationTest" />
-			<class name="tests.LoginTest" />
+			<class name="tests.LoginTest"/>
 		</classes>
 	</test>
 </suite> 
